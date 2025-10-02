@@ -1,0 +1,18 @@
+{
+    "name": "C# (.NET) with OpenXML",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csharp",
+                "ms-dotnettools.csdevkit"
+            ]
+        }
+    },
+
+    "postCreateCommand": "bash .devcontainer/setup.sh",
+    "remoteUser": "vscode"
+}
